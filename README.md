@@ -3,6 +3,6 @@
 <p> It is a Jekyll themed webpage created with bootstrap</p>
 
 
-#Licence
+# Licence
 
 <h2> @MIT </h2>
