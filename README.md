@@ -5,4 +5,4 @@
 
 # Licence
 
-<h2> @MIT </h2>
+<h5> @MIT </h5>
