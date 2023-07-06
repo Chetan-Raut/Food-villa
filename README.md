@@ -1,6 +1,6 @@
 ## Mehandi-Designs
 
-<p> It is a Jekyll themed webpage created with bootstrap</p>
+<p> It is a themed webpage created with bootstrap</p>
 
 
 # Licence
