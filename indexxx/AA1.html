@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <script src="script.js"></script>
+</head>
+<body>
+    
+    <div id="heading">
+        <h1>Chetan Raut</h1>
+    </div>
+    
+    <div id="resume">
+        <ul>
+            <li> <a href="Overleaf_Chetan_CV.pdf">Resume</a></li>
+        </ul>
+    </div>  
+                
+  <div class="container">
+    <div class="social">
+        
+  
+    </div>
+    
+    </div>
+       
+   <div class="footline">
+    <footer>
+        <p>Made with ❤ by <a href="https://www.github.com/Chetan-Raut" target="_blank">Chetan</a></p>
+    </footer>
+    </div> 
+    
+  
+  <style>
+      
+      body {
+          
+      }
+      
+      @media (min-height: 320px) {
+   
+   .footline {
+       margin: auto;
+   }
+}
+    
+footer p {
+    color: black;
+    font-family: monospace,arial,sans-serif;
+    font-weight: 400;
+}
+
+footer a {
+    text-decoration: none;
+    color: blue;
+    font-weight: 800;
+}
+/*background */
+body {
+  background-color: white;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Set the height of the container to the full viewport height */
+}
+
+.social {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.social a {
+  margin: 15%;
+}
+
+#heading {
+    color: deeppink; 
+    text-align: center; 
+    font-family: monospace; 
+    letter-spacing: 2px; 
+    font-size: 1rem;
+    margin-top: 5vh;
+}
+
+
+#resume {
+  margin: auto; /* Push the resume link to the bottom */
+}
+#resume ul li {
+  list-style: none;
+}
+#resume a {
+  text-decoration: none;
+  margin-left: 35%;
+  color: grey;
+}
+
+.footline {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  color: black; /* Set the color of the footer */
+}
+
+      
+      body {
+          background-color: skyblue;
+      }
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.ball {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  /* Additional styles like colors, shadows, etc. can be added */
+  animation-name: float;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(
+      calc(100vw * var(--translate-x) * 2),
+      calc(100vh * var(--translate-y) * 2)
+    );
+  }
+}
+
+.ball.violet {
+  background-color: violet;
+}
+
+.ball.green {
+  background-color: green;
+}
+
+.ball.blue {
+  background-color: blue;
+}
+
+.ball.orange {
+  background-color: orange;
+}
+
+.ball.red {
+  background-color: red;
+}
+
+.ball.yellow {
+  background-color: yellow;
+}
+
+  </style>
+  
+  <script>
+ window.addEventListener('DOMContentLoaded', () => {
+  const container = document.querySelector('.container');
+  const numBalls = 200;
+
+  for (let i = 0; i < numBalls; i++) {
+    const ball = document.createElement('div');
+    ball.classList.add('ball');
+    ball.style.setProperty('--translate-x', Math.random() * 2 - 1);
+    ball.style.setProperty('--translate-y', Math.random() * 2 - 1);
+    const color = getRandomColor();
+    ball.style.backgroundColor = color;
+    ball.style.left = `${getRandomPosition()}px`;
+    ball.style.top = `${getRandomPosition()}px`;
+    container.appendChild(ball);
+  }
+
+  function getRandomPosition() {
+    return Math.floor(Math.random() * window.innerWidth);
+  }
+
+  function getRandomColor() {
+    const colors = ['violet', 'green', 'blue', 'orange', 'red', 'yellow'];
+    return colors[Math.floor(Math.random() * colors.length)];
+  }
+});
+
+  </script>
+    
+  
+</body>
+</html>
