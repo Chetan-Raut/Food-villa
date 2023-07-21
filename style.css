@@ -83,6 +83,44 @@ p {
   text-decoration: none;
 }
 
+//Contact styles
+
+.contact h2,
+.social h2 {
+  color: #333;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact label,
+.contact textarea,
+.contact input[type="text"],
+.contact input[type="email"],
+.contact button {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+.contact textarea {
+  resize: vertical;
+}
+
+.contact button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #444;
+}
+
 /* Style for the social icons */
 /* .social-icons {
    display: flex;
