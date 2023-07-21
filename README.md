@@ -1,8 +1,11 @@
 # Food-villa
 
-https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white  https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white
-<img src="https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg" <a href="">
-</a> />
+[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/YourFacebookPage)
+
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/YourInstagramPage)
+
+[![Ask Me Anything](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](mailto:chetan.raut2009@gmail.com)
+
 
 Food villa is a user-friendly website that allows users to find and order food from their favorite restaurants. It is built using Bootstrap, jQuery, and Popper.js, ensuring a seamless and intuitive user experience. The website offers a variety of features that make it a convenient way to order food.
 
