@@ -1,6 +1,6 @@
 ## Food-Villa
 
-<p> It is a themed webpage created with bootstrap</p>
+<p> Food Villa is a website that allows users to find and order food from their favorite restaurants. It is built using Bootstrap, jQuery, and Popper.js. The website is easy to use and navigate, and it offers a variety of features that make it a convenient way to order food.</p>
 
 
 # Licence
