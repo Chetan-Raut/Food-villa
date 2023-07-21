@@ -1,21 +1,26 @@
-$(document).ready(function() {
-      // Code to be executed when the document is ready
+<script>
+  $(document).ready(function() {
+    // Image Slider
+    const slider = $('.slider');
+    const images = slider.find('img');
+    let currentIndex = 0;
 
-      // Example: Hide/show content on button click
-      $("#toggleButton").click(function() {
-        $("#additionalContent").slideToggle();
-      });
-      
-      // Example: Smooth scrolling to page sections
-      $("a").click(function(event) {
-        if (this.hash !== "") {
-          event.preventDefault();
-          var hash = this.hash;
-          $("html, body").animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-            window.location.hash = hash;
-          });
-        }
-      });
-    });
+    function showImage(index) {
+      images.hide().eq(index).fadeIn();
+    }
+
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+    }
+
+    function prevImage() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(currentIndex);
+    }
+
+    // Start the image slider
+    showImage(currentIndex);
+    setInterval(nextImage, 3000); // Change image every 3 seconds
+  });
+</script>
