@@ -10,7 +10,7 @@ body {
   color: #333;
 }
 
-#Logo {
+#Logo img {
  display: flex;
  justify-content: center;
  align-items: center;
