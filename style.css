@@ -14,8 +14,7 @@ body {
  display: flex;
  justify-content: center;
  align-items: center;
- margin-bottom: 1em;
- height: 10vh;
+ margin: 1rem;
 }
 
 header {
