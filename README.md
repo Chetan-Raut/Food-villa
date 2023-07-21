@@ -1,10 +1,19 @@
 # Food-villa
 
-[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/YourFacebookPage)
+<div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+  <a href="https://www.facebook.com/YourFacebookPage" style="margin-right: 20px;">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook">
+  </a>
+  <a href="https://www.instagram.com/YourInstagramPage" style="margin-left: 20px;">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+  </a>
+</div>
+<div style="display: flex; justify-content: center;">
+  <a href="mailto:chetan.raut2009@gmail.com">
+    <img src="https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg" alt="Ask Me Anything">
+  </a>
+</div>
 
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/YourInstagramPage)
-
-[![Ask Me Anything](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](mailto:chetan.raut2009@gmail.com)
 
 
 Food villa is a user-friendly website that allows users to find and order food from their favorite restaurants. It is built using Bootstrap, jQuery, and Popper.js, ensuring a seamless and intuitive user experience. The website offers a variety of features that make it a convenient way to order food.
