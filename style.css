@@ -10,6 +10,12 @@ body {
   color: #333;
 }
 
+.Logo {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
 header {
   background-color: #f8f8f8;
   padding: 10px;
