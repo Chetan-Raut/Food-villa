@@ -1,16 +1,16 @@
-# Food-Villa
+# Food-villa
 
-Food Villa is a user-friendly website that allows users to find and order food from their favorite restaurants. It is built using Bootstrap, jQuery, and Popper.js, ensuring a seamless and intuitive user experience. The website offers a variety of features that make it a convenient way to order food.
+Food villa is a user-friendly website that allows users to find and order food from their favorite restaurants. It is built using Bootstrap, jQuery, and Popper.js, ensuring a seamless and intuitive user experience. The website offers a variety of features that make it a convenient way to order food.
 
 ## Features
 
 - **Restaurant Search:** Users can easily search for restaurants based on various criteria such as cuisine type, location, and ratings.
 
-- **Menu Exploration:** Food Villa allows users to browse through restaurant menus, view food items, and their prices.
+- **Menu Exploration:** Food villa allows users to browse through restaurant menus, view food items, and their prices.
 
 - **Order Placement:** Users can place food orders directly from the website, making the process quick and convenient.
 
-- **User Accounts:** Food Villa offers user accounts with personalized profiles, order history, and preferences.
+- **User Accounts:** Food villa offers user accounts with personalized profiles, order history, and preferences.
 
 - **Responsive Design:** The website is designed to adapt to different devices and screen sizes for a seamless experience on mobile, tablet, and desktop.
 
