@@ -1,8 +1,8 @@
-## Mehandi-Designs
+## Food-Villa
 
 <p> It is a themed webpage created with bootstrap</p>
 
 
 # Licence
 
-<p> @MIT Licence </p>
+<p> <a href="">@MIT</a></p>
