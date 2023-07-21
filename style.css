@@ -121,7 +121,7 @@ p {
 } */
 
 /* Style for the social icons */
-/* .social-icons {
+ .social-icons {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -147,7 +147,7 @@ p {
 
  .whatsapp {
    color: #25d366;
-    } */
+    } 
 
 /* Responsive Design */
 @media (max-width: 600px) {
