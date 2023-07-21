@@ -10,11 +10,11 @@ body {
   color: #333;
 }
 
-.Logo {
+#Logo {
  display: flex;
  justify-content: center;
  align-items: center;
- margin: 5px;
+ margin-bottom: 1em;
 }
 
 header {
