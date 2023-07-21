@@ -85,7 +85,7 @@ p {
 
 /*Contact styles*/
 
-/* .contact h2 {
+.contact h2 {
   color: #333;
 }
 
@@ -118,7 +118,7 @@ p {
 
 .contact button:hover {
   background-color: #444;
-} */
+} 
 
 /* Style for the social icons */
  .social-icons {
