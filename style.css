@@ -1,172 +1,204 @@
-/* Reset some default styles */
-body, h1, h2, p, ul, li {
-  margin: 0;
-  padding: 0;
-}
-
+/* Global Styles */
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
-
-#Logo img {
- display: flex;
- justify-content: center;
- align-items: center;
- margin: 1rem;
-}
-
-header {
+  margin: 0;
+  padding: 0;
   background-color: #f8f8f8;
-  padding: 10px;
-  text-align: center;
 }
 
-h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  color: #ff6f00;
+/* Header and Navigation */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
 }
 
 nav {
-  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 nav a {
-  display: inline-block;
-  margin: 0 10px;
+  color: white;
   text-decoration: none;
-  color: #555;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #000;
+  color: #f39c12;
 }
 
+/*Logo*/
+#Logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* Main Content */
 main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 30px;
-}
-
-main img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
-  color: #ff6f00;
-}
-
-p {
-  margin-bottom: 20px;
-}
-
-.footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
+  padding: 50px;
   text-align: center;
 }
 
-.footer p {
-  margin: 5px 0;
-}
-
-.footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/*Contact styles*/
-
-.contact h2 {
+main h2 {
+  font-size: 36px;
   color: #333;
 }
 
-.contact form {
+main p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Image Slider */
+.slider {
   display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: auto;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  overflow: hidden;
+  margin-top: 30px;
 }
 
-.contact label,
-.contact textarea,
-.contact input[type="text"],
-.contact input[type="email"],
-.contact button {
-  margin: 0.5rem 0;
-  padding: 0.5rem;
+.slider img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s;
 }
 
+/* Social Icons */
+.social-icons {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-icons a.facebook i {
+  color: #1877f2; /* Facebook blue */
+}
+
+.social-icons a.instagram i {
+  color: #bc2a8d; /* Instagram pink */
+}
+
+.social-icons a.pinterest i {
+  color: #bd081c; /* Pinterest red */
+}
+
+.social-icons a.twitter i {
+  color: #1da1f2; /* Twitter blue */
+}
+
+.social-icons a.whatsapp i {
+  color: #25d366; /* WhatsApp green */
+}
+
+.social-icons a:hover {
+  color: #1877f2; /* Hover color for all icons */
+}
+ /*Reviews*/
+ 
+ #Reviews h3 {
+    text-align: center;
+ }
+ 
+ 
+/* Default styles for all screen sizes */
+.reviewer-image {
+  width: 100%; /* Ensures the image scales with its container */
+  height: auto; /* Allow the image to maintain its aspect ratio */
+  max-height: 40rem; /* Adjust the maximum height as needed */
+}
+
+.review-text {
+  font-family: sans-serif; /* Change to your desired font */
+  font-size: 18px; /* Adjust the font size as needed */
+  line-height: 1.5; /* Adjust line height for readability */
+}
+
+/* Media query for screens up to 320px wide (e.g., mobile phones) */
+@media (max-width: 320px) {
+  .reviewer-image {
+    max-height: 10rem; /* Adjust the maximum height as needed */
+  }
+}
+
+/* Media query for screens up to 768px wide (e.g., tablets) */
+@media (max-width: 768px) {
+  .reviewer-image {
+    max-height: 25rem; /* Adjust the maximum height as needed */
+  }
+}
+ 
+ 
+/* Contact Form */
+.contact {
+  background-color: #f9f9f9;
+  padding: 50px;
+  border: 1px gray;
+}
+
+.contact h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-color: purple;
+}
+
+.contact label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.contact input,
 .contact textarea {
-  resize: vertical;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .contact button {
-  background-color: #333;
-  color: #fff;
+  background-color: purple;
+  color: white;
   border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
   cursor: pointer;
 }
 
 .contact button:hover {
-  background-color: #444;
-} 
+  background-color: gray;
+}
 
-/* Style for the social icons */
- .social-icons {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   font-size: 1rem;
-   height: 20vh;
-   margin: 20px;
-    }
-
- .facebook {
-   color: #3b5998;
-    }
-
- .instagram {
-   color: #c13584;
-    }
-
- .pinterest {
-   color: #bd081c;
-    }
-
- .twitter {
-   color: #1da1f2;
-    }
-
- .whatsapp {
-   color: #25d366;
-    } 
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
 
 /* Responsive Design */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 24px;
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
   }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  nav {
-    display: block;
-    text-align: center;
-  }
-
-  nav a {
-    display: block;
-    margin: 5px 0;
+  .slider {
+    height: 200px;
   }
 }
