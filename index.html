@@ -1,127 +1,222 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:url" content="https://chetan-raut.github.io/Food-villa/">
-  <meta name="keywords" 
-content="Food-villa,Food ordering,Pizza online,Restaurant,Cuisine,Menu,Dining,Delicacies,Dishes,Fine Dining,Foodie">  
-  <meta name="author" content="Chetan Raut">
-  <title>Food villa</title>
- <!--FavIcon-->
-  <link rel="icon" href="static/Food-villa-girl-bg.jpeg" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
- <!--Font Awesome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <!--Boostrap CDN-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-<!-- Js and jQuery-->
-  <script src="scripts.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js">
-  $(document).ready(function() {
-    // Image Slider
-    const slider = $('.slider');
-    const images = slider.find('img');
-    let currentIndex = 0;
-
-    function showImage(index) {
-      images.hide().eq(index).fadeIn();
-    }
-
-    function nextImage() {
-      currentIndex = (currentIndex + 1) % images.length;
-      showImage(currentIndex);
-    }
-
-    function prevImage() {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      showImage(currentIndex);
-    }
-
-    // Start the image slider
-    showImage(currentIndex);
-    setInterval(nextImage, 3000); // Change image every 3 seconds
-  });
-</script>
-</head>
-<body>
-<div id="Logo">
- <img src="static/Food-villa-girl-bg.jpeg" height="150px" alt="Foodvilla">
-</div>
-  <header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#Menu">Menu</a>
-      <a href="#">Order</a>
-      <a href="#Contact">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <h2>Welcome to Foodvilla!</h2>
-    <p>We offer a variety of delicious food to satisfy your appetite. Whether you're looking for something quick and easy or something more elaborate, we have something for everyone.</p>
-    <p>Check out our menu and order your food today!</p>
-<!-- Menu -->
-<div class="slider" id="Menu">
-  <img src="https://i.imgur.com/jzxWf7U.jpg" alt="Indian thali">
-  <img src="https://i.imgur.com/6cOAz4x.jpg" alt="Indian thali">
-  <img src="https://i.imgur.com/6RN69JC.jpg" alt="Chhole Bhature">
-</div>
-  </main>
-
-<div class="social-icons">
-    <!-- Facebook Icon -->
-    <a href="https://www.facebook.com/" target="_blank" class="facebook">
-      <i class="fab fa-facebook"></i>
-    </a>
-
-    <!-- Instagram Icon -->
-    <a href="https://www.instagram.com/" target="_blank" class="instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-
-    <!-- Pinterest Icon -->
-    <a href="https://www.pinterest.com/" target="_blank" class="pinterest">
-      <i class="fab fa-pinterest"></i>
-    </a>
-
-    <!-- Twitter Icon -->
-    <a href="https://twitter.com/" target="_blank" class="twitter">
-      <i class="fab fa-twitter"></i>
-    </a>
-
-    <!-- WhatsApp Icon -->
-    <a href="https://web.whatsapp.com/" target="_blank" class="whatsapp">
-      <i class="fab fa-whatsapp"></i>
-    </a>
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta property="og:url" content="https://chetan-raut.github.io/Food-villa/"> 
+  <meta name="keywords" content="Food-villa,Food ordering,Pizza online,Restaurant,Cuisine,Menu,Dining,Delicacies,Dishes,Fine Dining,Foodie">   
+  <meta name="author" content="Chetan Raut"> 
+  <title>Food Villa</title> 
+  <!-- FavIcon --> 
+  <link rel="icon" href="static/Food-villa-girl-bg.jpeg" type="image/x-icon"> 
+  <link rel="stylesheet" href="style.css"> 
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+  <!-- Font Awesome --> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+  <!-- Boostrap CDN --> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">  
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js">    
+  </script> 
+</head> 
+<body> 
+   
+  <!-- Bootstrap Navbar --> 
+   
+  <nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Food Villa</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Specials
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Today's Special</a></li>
+              <li><a class="dropdown-item" href="#">Chef's Picks</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Events</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search for dishes" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
   </div>
-
-<section class="contact">
-      <h2>Get in touch with us</h2>
-      <p>We would love to hear from you!</p>
-      <form action="#" method="POST">
-
-        <label for="name">Name:</label> 
-        <input type="text" id="name" name="name" required> 
-
-        <label for="email">Email:</label> 
-        <input type="email" id="email" name="email" required> 
-
-        <label for="message">Message:</label> 
-        <textarea id="message" name="message" rows="4" required></textarea> 
-
-        <button type="submit">Send Message</button> 
-      </form>
-    </section>
-
-  <footer>
-    <div id="Contact"> <p>Contact us: info@foodvilla.com | Phone: (+91) 95290537XX</p>
+</nav>
+  
+  <main> 
+    <h2>Welcome to Foodvilla!</h2> 
+    <p>We offer a variety of delicious food to satisfy your appetite. Whether you're looking for something quick and easy or something more elaborate, we have something for everyone.</p> 
+    <p>Check out our menu and order your food today!</p> 
+    <!-- Menu --> 
+    <div class="slider" id="Menu"> 
+      <img src="https://i.imgur.com/jzxWf7U.jpg" alt="Indian thali"> 
+      <img src="https://i.imgur.com/6cOAz4x.jpg" alt="Indian thali"> 
+      <img src="https://i.imgur.com/6RN69JC.jpg" alt="Chhole Bhature"> 
+    </div> 
+  </main> 
+  
+  <div class="social-icons"> 
+    <!-- Facebook Icon --> 
+    <a href="https://www.facebook.com/" target="_blank" class="facebook"> 
+      <i class="fab fa-facebook"></i> 
+    </a> 
+    <!-- Instagram Icon --> 
+    <a href="https://www.instagram.com/" target="_blank" class="instagram"> 
+      <i class="fab fa-instagram"></i> 
+    </a> 
+    <!-- Pinterest Icon --> 
+    <a href="https://www.pinterest.com/" target="_blank" class="pinterest"> 
+      <i class="fab fa-pinterest"></i> 
+    </a> 
+    <!-- Twitter Icon --> 
+    <a href="https://twitter.com/" target="_blank" class="twitter"> 
+      <i class="fab fa-twitter"></i> 
+    </a> 
+    <!-- WhatsApp Icon --> 
+    <a href="https://web.whatsapp.com/" target="_blank" class="whatsapp"> 
+      <i class="fab fa-whatsapp"></i> 
+    </a> 
+  </div> 
+  
+ <hr>
+  
+  <section class="menu" id="Menu">
+  <h2>Explore Our Menu</h2>
+  <div class="menu-items">
+    <div class="menu-item">
+      <img src="https://i.imgur.com/jzxWf7U.jpg" alt="Indian thali" height="90vh">
+      <h3>Indian Thali</h3>
+      <p>A delicious combination of flavors and textures.</p>
+    </div>
+    <div class="menu-item">
+      <img src="https://i.imgur.com/6cOAz4x.jpg" alt="Indian thali" height="90vh">
+      <h3>Paneer Tikka</h3>
+      <p>Grilled cottage cheese with aromatic spices.</p>
+    </div>
+    <div class="menu-item">
+      <img src="https://i.imgur.com/6RN69JC.jpg" alt="Chhole Bhature" height="90vh">
+      <h3>Chhole Bhature</h3>
+      <p>A classic North Indian dish loved by many.</p>
+    </div>
+    <!-- Add more menu items here -->
   </div>
-    <p>Copyright 2023 Foodvilla. All rights reserved.</p>
-  </footer>
-<!--Bootstrap Js bundle-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-<!-- Font Awesome JS link (optional, for certain advanced features) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
- </body>
+</section>
+  
+  <hr>
+  
+  <section class="reviews" id="Reviews">
+  <h2>Customer Reviews</h2>
+  <div class="review">
+    <div class="reviewer-info">
+         
+      <h3 style="font-family: 'Raleway';">HK</h3>
+      <img src="static/Pxbay-Cute-Girl-Smile-sm.jpg" height="250px"
+     srcset="static/Pxbay-Cute-Girl-Smile-sm.jpg 320w,
+             static/Pxbay-Cute-Girl-Smile-md.jpg 768w,
+             static/Pxbay-Cute-Girl-Smile-lg.jpg 1200w"
+     sizes="(max-width: 320px) 280px,
+            (max-width: 768px) 720px,
+            1140px"
+     alt="Cute Girl in Red dress">     
+     <blockquote><p class="review-text"><q>My visit to <b>Food Villa</b> was an <span class="highlight">absolute delight</span>. The hospitality, attention to detail, and culinary excellence exceeded all expectations. Every dish was a masterpiece, reflecting the chefs' dedication. The personalized service made me feel like a valued guest, and I can't wait to return to <em>relive this unforgettable experience</em>. Warm regards, Harshada</q></p></blockquote> 
+    </div>
+    
+    <hr>
+    
+  <h3 style="font-family: 'Raleway';">Sanjana</h3>
+      <img src="static/Pxbay-Cute-Girl2-Smile-sm.jpg.jpg" height="250px"
+     srcset="static/Pxbay-Cute-Girl2-Smile-sm.jpg 320w,
+             static/Pxbay-Cute-Girl2-Smile-md.jpg 768w,
+             static/Pxbay-Cute-Girl2-Smile-lg.jpg 1200w"
+     sizes="(max-width: 320px) 280px,
+            (max-width: 768px) 720px,
+            1140px"
+     alt="Cute Girl2 in Red dress">
+     
+      <blockquote><p class="review-text"><q>A delightful experience at <b>Food Villa</b>. The culinary excellence and attention to detail surpassed expectations. Each dish felt like a masterpiece, showcasing the dedication of the chefs. The personalized service made me feel cherished, and I'm eagerly anticipating my next visit to <b>Food Villa</b> to relive this unforgettable experience. Warm regards, Sanjana</q></p></blockquote> 
+    </div>
+    <!-- Add more reviews here -->
+  </div>
+</section> 
+  
+  
+  <section class="contact"> 
+    <h2>Get in touch with us</h2> 
+    <p>We would love to hear from you!</p> 
+    <form action="#" method="POST"> 
+      <label for="name">Name<span style="color:red;"> *</span></label>  
+      <input type="text" id="name" name="name" placeholder="Enter Name" required>  
+      <label for="email">Email<span style="color:red;"> *</span></label>  
+      <input type="email" id="email" name="email" placeholder="Enter Email" required>  
+      <label for="message">Message<span style="color:red;"> *</span></label>  
+      <textarea id="message" name="message" rows="4" placeholder="Enter a comment, Please be polite and nice." required></textarea>  
+      <button type="submit">Send Message</button>  
+    </form> 
+  </section> 
+  
+  <footer> 
+    <div id="Contact"> 
+      <p>Contact us: info@foodvilla.com | Phone: (+91) 95290537XX</p> 
+    </div> 
+    <p>Copyright 2023 Foodvilla. All rights reserved.</p> 
+  </footer> 
+  
+  <!-- Bootstrap Js bundle --> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> 
+  
+  <!-- Font Awesome JS link (optional, for certain advanced features) --> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script> 
+  
+  <!-- Js and jQuery--> 
+  <script src="scripts.js"></script> 
+  <script>
+    $(document).ready(function() { 
+      // Image Slider 
+      const slider = $('.slider'); 
+      const images = slider.find('img'); 
+      let currentIndex = 0; 
+
+      function showImage(index) { 
+        images.hide().eq(index).fadeIn(); 
+      } 
+
+      function nextImage() { 
+        currentIndex = (currentIndex + 1) % images.length; 
+        showImage(currentIndex); 
+      } 
+
+      function prevImage() { 
+        currentIndex = (currentIndex - 1 + images.length) % images.length; 
+        showImage(currentIndex); 
+      } 
+
+      // Start the image slider 
+      showImage(currentIndex); 
+      setInterval(nextImage, 3000); // Change image every 3 seconds 
+    }); 
+  </script> 
+</body> 
 </html>
