@@ -47,6 +47,8 @@ header {
 }
 
 .menu-item img {
+  height: 15vh;
+  max-height: 200px;
   max-width: 100%;
 }
 
@@ -64,8 +66,8 @@ header {
   background-color: #ffffff;
   color: #000000;
   margin-bottom: 1em;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding:  20px;
+  font-size: 10px;
   cursor: pointer;
 }
 
@@ -103,8 +105,10 @@ nav a {
 nav a:hover {
   color: #f39c12;
 }
-
-
+/*bold text*/
+nav .text-bold {
+   font-weight: 800;
+}
 
 /*Logo*/
 #Logo {
@@ -132,24 +136,6 @@ main p {
 /*Info*/
 .Info {
    margin-top: 3rem;
-}
-
-
-/* Image Slider */
-.slider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  overflow: hidden;
-  margin-top: 0.5rem;
-}
-
-.slider img {
- /* width: auto;
-  height: 100%;*/
-  object-fit: cover;
-  transition: opacity 0.5s;
 }
 
 /* Social Icons */
