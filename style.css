@@ -1,8 +1,4 @@
 /* Global Styles */
-* {
-   margin: 0;
-   padding: 0;
-}
 
 body {
   font-family: Arial, sans-serif;
@@ -36,7 +32,7 @@ header {
 /*Menu*/
 .menu {
   background-color: #ffffff;
-  padding: 20px;
+  padding: 8px 20px;
 }
 
 .menu-items {
