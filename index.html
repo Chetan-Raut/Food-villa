@@ -32,66 +32,82 @@
     </button>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Explore- Food Villa </h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <div class="offcanvas-body">
+      <div class="offcanvas-body text-center bg-secondary">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+         
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" href="#">Menu</a>
           </li>
+             <li class="nav-item">
+            <a class="nav-link active" href="#">Order Online</a>
+          </li>
+             <li class="nav-item">
+            <a class="nav-link active" href="Main/About.html">About Us</a>
+          </li>
+             <li class="nav-item">
+            <a class="nav-link active" href="#">Location/Hours</a>
+          </li>   
           <li class="nav-item">
-            <a class="nav-link" href="#">Menu</a>
+            <a class="nav-link active" href="#">Support/FAQ</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Specials
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Today's Special</a></li>
-              <li><a class="dropdown-item" href="#">Chef's Picks</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Events</a></li>
-            </ul>
-          </li>
-        </ul>
+         
+    <!-- Theme Toggle Button -->
+    <div class="dropdown mt-3 mx-auto d-block">
+    <div class="d-flex justify-content-center align-items-center">
+    <button id="themeToggle" class="btn btn-secondary mt-3 w-100 align-content-center text-center">Toggle Dark Theme 🌙</button>
+    </div>
+    <div class="dropdown-menu" aria-labelledby="themeToggle">
+        <!-- Dropdown menu items... -->
+    <a class="dropdown-item" href="#" id="lightTheme">Light</a>
+    <a class="dropdown-item" href="#" id="darkTheme">Dark</a>
+    <a class="dropdown-item" href="#" id="autoTheme">Auto</a>
+    </div>
+</div>    
+
+      
         <form class="d-flex mt-3" role="search">
           <input class="form-control me-2" type="search" placeholder="Search for dishes" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-outline-dark" type="submit">Search</button>
         </form>
       </div>
     </div>
   </div>
 </nav>
    
-   
- <!--  <div id="Logo"> 
-    <img src="static/Food-villa-girl-bg.jpeg" height="150px" alt="Foodvilla"> 
-  </div> 
-  <header> 
-    <nav> 
-      <a href="#">Home</a> 
-      <a href="#Menu">Menu</a> 
-      <a href="#">Order</a> 
-      <a href="#Contact">Contact</a> 
-    </nav> 
-  </header>  -->
-  
-  
+
   <main> 
-    <h2>Welcome to Foodvilla!</h2> 
-    <p>We offer a variety of delicious food to satisfy your appetite. Whether you're looking for something quick and easy or something more elaborate, we have something for everyone.</p> 
-    <p>Check out our menu and order your food today!</p> 
-    <!-- Menu --> 
-    <div class="slider" id="Menu"> 
-      <img src="https://i.imgur.com/jzxWf7U.jpg" alt="Indian thali"> 
-      <img src="https://i.imgur.com/6cOAz4x.jpg" alt="Indian thali"> 
-      <img src="https://i.imgur.com/6RN69JC.jpg" alt="Chhole Bhature"> 
-    </div> 
-  </main> 
+  <div class="Info"><p>We offer a variety of delicious food to satisfy your appetite. Whether you're looking for something quick and easy or something more elaborate, we have something for everyone.</p> 
+    <p>Check out our menu and order your food today!</p> </div> 
+    
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://i.imgur.com/6cOAz4x.jpg" class="d-block w-100" alt="Indian Thali">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.imgur.com/6RN69JC.jpg" class="d-block w-100" alt="Chhole Bhature">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.imgur.com/jzxWf7U.jpg" class="d-block w-100" alt="Aesthetic Thali">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+    </main>
   
+  
+ <!-- Socials -->
   <div class="social-icons"> 
     <!-- Facebook Icon --> 
     <a href="https://www.facebook.com/" target="_blank" class="facebook"> 
@@ -116,6 +132,8 @@
   </div> 
   
  <hr>
+ 
+  <!-- menu -->
   
   <section class="menu" id="Menu">
   <h2>Explore Our Menu</h2>
@@ -124,18 +142,27 @@
       <img src="https://i.imgur.com/jzxWf7U.jpg" alt="Indian thali" height="90vh">
       <h3>Indian Thali</h3>
       <p>A delicious combination of flavors and textures.</p>
+      <button class="btn btn-primary">Add to Cart</button>
     </div>
     <div class="menu-item">
       <img src="https://i.imgur.com/6cOAz4x.jpg" alt="Indian thali" height="90vh">
       <h3>Paneer Tikka</h3>
       <p>Grilled cottage cheese with aromatic spices.</p>
+      <button class="btn btn-primary">Add to Cart</button>
     </div>
     <div class="menu-item">
       <img src="https://i.imgur.com/6RN69JC.jpg" alt="Chhole Bhature" height="90vh">
       <h3>Chhole Bhature</h3>
       <p>A classic North Indian dish loved by many.</p>
+      <button class="btn btn-primary">Add to Cart</button>
     </div>
-    <!-- Add more menu items here -->
+    <!-- Add more menu items here --> 
+    <div class="menu-item">
+      <img src="https://i.imgur.com/1gXK21s.jpg" alt="Chhole Bhature" height="90vh">
+      <h3>Classic Thali</h3>
+      <p>A classic North Indian thali loved by many.</p>
+      <button class="btn btn-primary">Add to Cart</button>
+    </div>
   </div>
 </section>
   
@@ -154,24 +181,26 @@
      sizes="(max-width: 320px) 280px,
             (max-width: 768px) 720px,
             1140px"
-     alt="Cute Girl in Red dress">     
-     <blockquote><p class="review-text"><q>My visit to <b>Food Villa</b> was an <span class="highlight">absolute delight</span>. The hospitality, attention to detail, and culinary excellence exceeded all expectations. Every dish was a masterpiece, reflecting the chefs' dedication. The personalized service made me feel like a valued guest, and I can't wait to return to <em>relive this unforgettable experience</em>. Warm regards, Harshada</q></p></blockquote> 
+     alt="Cute Girl in Red dress">   <br>  
+     <p class="review-text"><q>My visit to <b>Food Villa</b> was an <span class="highlight">absolute delight</span>. The hospitality, attention to detail, and culinary excellence exceeded all expectations. Every dish was a masterpiece, reflecting the chefs' dedication. The personalized service made me feel like a valued guest, and I can't wait to return to relive this unforgettable experience. <span class="underline">Warm regards, Harshada</span></q></p>
     </div>
     
     <hr>
     
+    <div class="reviewer-info">
   <h3 style="font-family: 'Raleway';">Sanjana</h3>
-      <img src="static/Pxbay-Cute-Girl2-Smile-sm.jpg" height="250px"
+      <img src="static/Pxbay-Cute-Girl2-Smile-sm.jpg" height="250px" 
      srcset="static/Pxbay-Cute-Girl2-Smile-sm.jpg 320w,
              static/Pxbay-Cute-Girl2-Smile-md.jpg 768w,
              static/Pxbay-Cute-Girl2-Smile-lg.jpg 1200w"
      sizes="(max-width: 320px) 280px,
             (max-width: 768px) 720px,
             1140px"
-     alt="Cute Girl2 in Red dress">
-     
-      <blockquote><p class="review-text"><q>A delightful experience at <b>Food Villa</b>. The culinary excellence and attention to detail surpassed expectations. Each dish felt like a masterpiece, showcasing the dedication of the chefs. The personalized service made me feel cherished, and I'm eagerly anticipating my next visit to <b>Food Villa</b> to relive this unforgettable experience. Warm regards, Sanjana</q></p></blockquote> 
+     alt="Cute Girl2 in Red dress">  <br>  
+      <p class="review-text"><q>A delightful experience at <b>Food Villa</b>. The culinary excellence and attention to detail surpassed expectations. Each dish felt like a masterpiece, showcasing the dedication of the chefs. The personalized service made me feel cherished, and I'm eagerly anticipating my next visit to Food Villa to relive this unforgettable experience. 
+      <span class="underline">Warm regards, Sanjana</span></q></p>
     </div>
+   </div>
     <!-- Add more reviews here -->
   </div>
 </section> 
@@ -180,13 +209,13 @@
   <section class="contact"> 
     <h2>Get in touch with us</h2> 
     <p>We would love to hear from you!</p> 
-    <form action="#" method="POST"> 
+    <form action="https://formspree.io/f/xoqoelpb" method="POST"> 
       <label for="name">Name<span style="color:red;"> *</span></label>  
       <input type="text" id="name" name="name" placeholder="Enter Name" required>  
       <label for="email">Email<span style="color:red;"> *</span></label>  
       <input type="email" id="email" name="email" placeholder="Enter Email" required>  
       <label for="message">Message<span style="color:red;"> *</span></label>  
-      <textarea id="message" name="message" rows="4" placeholder="Enter a comment, Please be polite and nice." required></textarea>  
+      <textarea id="message" name="message" rows="4" cols="30" placeholder="Enter your message, Please be polite and nice." required></textarea>  
       <button type="submit">Send Message</button>  
     </form> 
   </section> 
@@ -198,39 +227,18 @@
     <p>Copyright 2023 Foodvilla. All rights reserved.</p> 
   </footer> 
   
-  <!-- Bootstrap Js bundle --> 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> 
+  <!-- Bootstrap Js bundle -->   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
+  <!-- PopperJs -->  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> 
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script> 
   
   <!-- Font Awesome JS link (optional, for certain advanced features) --> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script> 
   
   <!-- Js and jQuery--> 
   <script src="scripts.js"></script> 
-  <script>
-    $(document).ready(function() { 
-      // Image Slider 
-      const slider = $('.slider'); 
-      const images = slider.find('img'); 
-      let currentIndex = 0; 
-
-      function showImage(index) { 
-        images.hide().eq(index).fadeIn(); 
-      } 
-
-      function nextImage() { 
-        currentIndex = (currentIndex + 1) % images.length; 
-        showImage(currentIndex); 
-      } 
-
-      function prevImage() { 
-        currentIndex = (currentIndex - 1 + images.length) % images.length; 
-        showImage(currentIndex); 
-      } 
-
-      // Start the image slider 
-      showImage(currentIndex); 
-      setInterval(nextImage, 3000); // Change image every 3 seconds 
-    }); 
-  </script> 
 </body> 
 </html>
