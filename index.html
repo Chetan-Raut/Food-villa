@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="style.css"> 
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+ />
   <!-- Font Awesome --> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
   <!-- Boostrap CDN --> 
@@ -59,6 +62,8 @@
     <div class="d-flex justify-content-center align-items-center">
     <button id="themeToggle" class="btn btn-secondary mt-3 w-100 align-content-center text-center text-white btn-outline-dark">Toggle Dark Theme 🌙</button>
     </div>
+    
+    
     <div class="dropdown-menu" aria-labelledby="themeToggle">
         <!-- Dropdown menu items... -->
     <a class="dropdown-item" href="#" id="lightTheme">Light</a>
@@ -81,62 +86,55 @@
   <main> 
   <div class="Info"><p>We offer a variety of delicious food to satisfy your appetite. Whether you're looking for something quick and easy or something more elaborate, we have something for everyone.</p> 
     <p>Check out our menu and order your food today!</p> </div> 
-    
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://i.imgur.com/6cOAz4x.jpg" class="d-block w-100" alt="Indian Thali">
-    </div>
-    <div class="carousel-item">
-      <img src="https://i.imgur.com/6RN69JC.jpg" class="d-block w-100" alt="Chhole Bhature">
-    </div>
-    <div class="carousel-item">
-      <img src="https://i.imgur.com/jzxWf7U.jpg" class="d-block w-100" alt="Aesthetic Thali">
+   <!-- Banner -->
+<div class="banner">
+  <div class="container">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="static/px-Vegs.jpg" class="d-block w-100" alt="Vegetables">
+          <div class="carousel-caption">
+            <h5 class="animate__animated animate__fadeIn">Vegetables</h5>
+            <p style="color: white;">Fresh and nutritious vegetables to delight your taste buds.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="static/px-nuts.jpg" class="d-block w-100 sub-image" alt="Nuts">
+          <div class="carousel-caption">
+            <h5 class="animate__animated animate__fadeIn">Nuts</h5>
+            <p style="color: white;">Crunchy and delicious nuts for a healthy snack.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="static/px-pizzas.jpg" class="d-block w-100 sub-image" alt="Pizza">
+          <div class="carousel-caption">
+            <h5 class="animate__animated animate__fadeIn">Pizza</h5>
+            <p style="color: white;">Indulge in mouthwatering pizzas with your favorite toppings.</p>
+          </div>
+        </div>
+        <!-- Add more carousel items and captions for other cuisines -->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
-
     </main>
   
   
- <!-- Socials -->
-  <div class="social-icons"> 
-    <!-- Facebook Icon --> 
-    <a href="https://www.facebook.com/" target="_blank" class="facebook"> 
-      <i class="fab fa-facebook"></i> 
-    </a> 
-    <!-- Instagram Icon --> 
-    <a href="https://www.instagram.com/" target="_blank" class="instagram"> 
-      <i class="fab fa-instagram"></i> 
-    </a> 
-    <!-- Pinterest Icon --> 
-    <a href="https://www.pinterest.com/" target="_blank" class="pinterest"> 
-      <i class="fab fa-pinterest"></i> 
-    </a> 
-    <!-- Twitter Icon --> 
-    <a href="https://twitter.com/" target="_blank" class="twitter"> 
-      <i class="fab fa-twitter"></i> 
-    </a> 
-    <!-- WhatsApp Icon --> 
-    <a href="https://web.whatsapp.com/" target="_blank" class="whatsapp"> 
-      <i class="fab fa-whatsapp"></i> 
-    </a> 
-  </div> 
-  
- <hr>
+
  
   <!-- menu -->
   
   <section class="menu" id="Menu">
-  <h2>Explore Our Menu</h2>
+  <h2 style="text-decoration: underline;">Explore Our Menu</h2>
+  <br>
   <div class="menu-items">
     <div class="menu-item">
       <img src="https://i.imgur.com/jzxWf7U.jpg" alt="Indian thali">
@@ -161,18 +159,16 @@
       <img src="https://i.imgur.com/1gXK21s.jpg" alt="Chhole Bhature">
       <h3>Classic Thali</h3>
       <p>A classic North Indian thali loved by many.</p>
-      <button class="btn btn-primary">Add&nbsp;to&nbsp;Cart</button>
+      <button class="btn btn-primary">Add&nbsp;to&nbsp;Cartt</button>
     </div>
   </div>
 </section>
   
-  <hr>
-  
   <section class="reviews" id="Reviews">
-  <h2>Customer Reviews</h2>
+ 
   <div class="review">
     <div class="reviewer-info">
-         
+          <h2 style="text-decoration: underline;">Customer Reviews</h2>
       <h3 style="font-family: 'Raleway';">HK</h3>
       <img src="static/Pxbay-Cute-Girl-Smile-sm.jpg" height="250px"
      srcset="static/Pxbay-Cute-Girl-Smile-sm.jpg 320w,
@@ -185,7 +181,6 @@
      <p class="review-text"><q>My visit to <b>Food Villa</b> was an <span class="highlight">absolute delight</span>. The hospitality, attention to detail, and culinary excellence exceeded all expectations. Every dish was a masterpiece, reflecting the chefs' dedication. The personalized service made me feel like a valued guest, and I can't wait to return to relive this unforgettable experience. <span class="underline">Warm regards, Harshada</span></q></p>
     </div>
     
-    <hr>
     
     <div class="reviewer-info">
   <h3 style="font-family: 'Raleway';">Sanjana</h3>
