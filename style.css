@@ -3,17 +3,21 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
-  background-color: white; /*Default theme */
-  /*color: black;*/
+  background-color: #383B53;
 }
  
 /* Alternate Theme */
 body.dark-theme {
-   background-color: black;
+   background-color: #383B53;
    color: white;
 }
- 
+
+
+ .sub-image {
+      max-width: 100%;
+      height: auto;
+    }
+    
 /*Search bar*/
 .form-control,
   .btn {
@@ -22,8 +26,9 @@ body.dark-theme {
   
 /*Menu*/
 .menu {
-  background-color: #ffffff;
+  background-color: #383B53;
   padding: 8px 20px;
+  color: white;
 }
 
 .menu-items {
@@ -47,10 +52,12 @@ body.dark-theme {
 .menu-item h3 {
   font-size: 18px;
   margin-bottom: 5px;
+  color: white;
 }
 
 .menu-item p {
   font-size: 14px;
+  color: white;
 }
 
 .btn {
@@ -115,6 +122,7 @@ nav .text-bold {
 main {
   padding: 2rem;
   text-align: center;
+  background-color: #383B53;
 }
 
 main h2 {
@@ -124,7 +132,7 @@ main h2 {
 
 main p {
   font-size: 18px;
-  color: #666;
+  color: white;
 }
 
 /*Info*/
@@ -132,44 +140,12 @@ main p {
    margin-top: 3rem;
 }
 
-/* Social Icons */
-.social-icons {
-  text-align: center;
-  margin-top: 30px;
-}
 
-.social-icons a {
-  font-size: 24px;
-  margin: 0 10px;
-  transition: color 0.3s;
-}
-
-.social-icons a.facebook i {
-  color: #1877f2; /* Facebook blue */
-}
-
-.social-icons a.instagram i {
-  color: #bc2a8d; /* Instagram pink */
-}
-
-.social-icons a.pinterest i {
-  color: #bd081c; /* Pinterest red */
-}
-
-.social-icons a.twitter i {
-  color: #1da1f2; /* Twitter blue */
-}
-
-.social-icons a.whatsapp i {
-  color: #25d366; /* WhatsApp green */
-}
-
-.social-icons a:hover {
-  color: #1877f2; /* Hover color for all icons */
-}
  /*Reviews*/
  
 .reviewer-info {
+  background-color: #383B53;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -231,24 +207,26 @@ main p {
  
 /* Contact Form */
 .contact {
-  background-color: #f9f9f9;
+  background-color: #383B53;
+  color: white;
   padding: 2rem;
   border: 1px gray;
+  width: 100%;
 }
 
 .contact h2 {
   font-size: 28px;
-  color: purple;
+  color: white;
   margin-bottom: 20px;
   text-decoration: underline;
-  text-decoration-color: black;
+  text-decoration-color: whitesmoke;
 }
 
 .contact label {
   display: block;
   font-size: 16px;
   margin-bottom: 10px;
-  color: #555;
+  color: whitesmoke;
 }
 
 .contact input,
@@ -276,10 +254,14 @@ main p {
 
 /* Footer */
 footer {
-  background-color: #333;
+  background-color: #171614;
   color: white;
   padding: 20px 0;
   text-align: center;
+}
+
+footer p {
+   color: white;
 }
 
 /* Responsive Design */
