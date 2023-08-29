@@ -9,7 +9,7 @@
   </a>
 </div>
 
-Food villa is a user-friendly website that allows users to find and order food from their favorite restaurants. It is built using Bootstrap, jQuery, and Popper.js, ensuring a seamless and intuitive user experience. The website offers a variety of features that make it a convenient way to order food.
+Food villa is a user-friendly website that allows users to find and order food from their favorite restaurants. It is built using Bootstrap, jQuery, ensuring a seamless and intuitive user experience. The website offers a variety of features that make it a convenient way to order food.
 
 ## Features
 
@@ -29,7 +29,6 @@ Food villa is a user-friendly website that allows users to find and order food f
 
 - jQuery: A fast and feature-rich JavaScript library that simplifies HTML document traversal and manipulation, event handling, and more.
 
-- Popper.js: A library that helps with positioning and popovers for enhanced user interactions.
 
 ## License
 
