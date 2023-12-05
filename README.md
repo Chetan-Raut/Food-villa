@@ -9,8 +9,6 @@
   </a>
 </div>
 
-Food villa is a user-friendly website that allows users to find and order food from their favorite restaurants. It is built using Bootstrap, jQuery, ensuring a seamless and intuitive user experience. The website offers a variety of features that make it a convenient way to order food.
-
 ## Features
 
 - **Restaurant Search:** Users can easily search for restaurants based on various criteria such as cuisine type, location, and ratings.
